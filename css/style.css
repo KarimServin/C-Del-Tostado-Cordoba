@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  color: white !important;
+  background-color: black !important;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .separar {
+  padding-right: 5%;
+  white-space: 10%;
+}
+
+.fondorosa {
+  position: inherit;
+  width: 964px;
+  height: 774px;
+  left: 0px;
+  top: 0px;
+  background: #EEAFC7;
+}
+
+.fondorosa {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(70%, #EEAFC7), color-stop(30%, #FF9E80));
+  background-image: linear-gradient(90deg, #EEAFC7 70%, #FF9E80 30%);
+  position: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.cartablur {
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(31px);
+          backdrop-filter: blur(31px);
+  width: 25rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  position:absolute !important;
+}
+
+@media only screen and (min-width: 500px) {
+  .cartablur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 100px;
+    top: 141px;
+    width: 200%;
+    position:absolute !important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .cartablur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+        position: absolute;
+  }
+}
+
+.btncarta {
+  color: white;
+  background-color: #EA4C89;
+}
+
+.slogan {
+  color: #EA4C89;
+  font-family: "Radio Canada", sans-serif;
+}
+
+.texto {
+  font-family: "Radio Canada", sans-serif;
+  font-weight: 1000;
+}
+
+.texto2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.kard {
+  height: 90%;
+  border: 0;
+  background-color: #e0e0e0;
+}
+
+.card-group {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cardimg {
+  aspect-ratio: 1.31/1;
+}
+
+footer {
+  position: static;
+  border-color: black;
+  background-color: black;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.meriendas {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  background-color: rgba(234, 76, 137, 0.1);
+}
+
+.grid-gallery {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 200px;
+  gap: 1rem;
+  grid-auto-flow: row dense;
+  margin: 20%;
+  background-color: white;
+}
+.grid-gallery {
+@media all and (min-width: 320px) {
+ 
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid-gallery {
+@media all and (min-width: 768px) {
+ 
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid-gallery {
+@media all and (min-width: 1024px) {
+ 
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+  grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+  grid-row: span 3;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 500px) {
+  .textoqs {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+
+
+
+  @media screen and (max-width: 1600px) {
+     
+
+    .carousel {
+
+      visibility: hidden;
+
+    }
+    .fotocarrusel{
+    
+       visibility: hidden;
+    }
+
+    .cartablur {
+
+      margin-bottom: 40%;
+      align-items: center;
+
+    }
+
+  }
+ 
+
+  @media screen and (max-width: 1600px) {
+     
+
+    
+
+  }
