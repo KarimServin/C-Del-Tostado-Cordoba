@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  
+  
 }
-
 .navbar {
   color: white !important;
   background-color: black !important;
@@ -17,21 +18,15 @@
   white-space: 10%;
 }
 
-.fondorosa {
-  position: inherit;
-  width: 964px;
-  height: 774px;
-  left: 0px;
-  top: 0px;
-  background: #EEAFC7;
-}
+
 
 .fondorosa {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(70%, #EEAFC7), color-stop(30%, #FF9E80));
-  background-image: linear-gradient(90deg, #EEAFC7 70%, #FF9E80 30%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(70%, #EEAFC7), color-stop(30%, #ffffff));
+  background-image: linear-gradient(90deg, #EEAFC7 70%, #ffb49d 30%);
   position: inherit;
   width: 100%;
   overflow: hidden;
+  
 }
 
 
@@ -46,7 +41,8 @@
   text-align: justify;
   font-family: "Montserrat", sans-serif;
   color: black;
-  position:absolute !important;
+  z-index: 9;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 500px) {
@@ -57,20 +53,60 @@
     left: 100px;
     top: 141px;
     width: 200%;
-    position:absolute !important;
+    
   }
 }
 
+
 @media only screen and (max-width: 499px) {
   .cartablur {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-        position: absolute;
+     margin: 5%;
+     align-items: center;
+     
+    
   }
+
+
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+ 
+  .carousel {
+
+    white-space: nowrap;
+    
+   }
+
+
+   .punto {
+
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+   }
+   .fotocarrusel {
+    white-space: nowrap;
+   }
+
+  .fondorosa {
+
+    padding-bottom: 0% !important;
+    margin-bottom: 0% !important;
+  }
+
+}
+
+
+.fotocarrusel {
+  display: inline;
+  position: relative; 
+  overflow: hidden;
+  
+}
+
 
 .btncarta {
   color: white;
@@ -97,6 +133,10 @@
   background-color: #e0e0e0;
 }
 
+.kard2 {
+
+  overflow: hidden;
+}
 .card-group {
   margin-left: 10%;
   margin-right: 10%;
@@ -111,6 +151,7 @@ footer {
   border-color: black;
   background-color: black;
   width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -121,6 +162,7 @@ a {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   background-color: rgba(234, 76, 137, 0.1);
+  overflow-x: hidden;
 }
 
 .grid-gallery {
@@ -191,8 +233,8 @@ a {
 
 @media only screen and (min-width: 500px) {
   .textoqs {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
   }
 }
 
@@ -202,22 +244,7 @@ a {
   @media screen and (max-width: 1600px) {
      
 
-    .carousel {
-
-      visibility: hidden;
-
-    }
-    .fotocarrusel{
     
-       visibility: hidden;
-    }
-
-    .cartablur {
-
-      margin-bottom: 40%;
-      align-items: center;
-
-    }
 
   }
  
